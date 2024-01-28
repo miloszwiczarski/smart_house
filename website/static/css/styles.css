@@ -1,0 +1,125 @@
+/* styles.css */
+body {
+    font-family: 'Calibri', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    background-color: #e1efff;
+}
+
+h1 {
+    margin-top: 40px; 
+    letter-spacing: 3px;
+}
+.welcome-page, .dashboard-page, .header {
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    font-size: 40px;
+    cursor: pointer;
+    margin: 20px;
+    background-color: #f86c1c;
+    color: white;
+    padding: 30px 50px;
+    border: none;
+    border-radius: 50px; 
+
+}
+
+button:hover {
+    background-color: #e04e1b;
+}
+
+.dashboard-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 80px;
+    color: #1F5692;
+}
+
+
+.go-home-button {
+    position: absolute;
+    top: 70px;
+    right: 35px;
+    background-color: #f86c1c;
+    color: white;
+    font-size: 16px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+}
+
+.logout-button {
+    position: absolute;
+    top: 83px;
+    right: 90px;
+    background-color: #f86c1c;
+    color: white;
+    font-size: 14px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+}
+
+.back-button {
+    position: absolute;
+    top: 83px;
+    left: 30px;
+    background-color: #f86c1c;
+    color: white;
+    font-size: 14px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+}
+
+.back-to-main-button{
+    position: absolute;
+    top: 83px;
+    left: 130px;
+    background-color: #f86c1c;
+    color: white;
+    font-size: 14px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+}
+    
+.devices-h1{
+    font-size: 40px;
+    color: #0f2a47;
+
+}
+
+.alert {
+    margin: 0 1%;
+}
+
+.container-fluid.search-container .row {
+    display: flex;
+    flex-wrap: wrap; /* Pozwala elementom na przewijanie się, jeśli nie mieszczą się w jednym rzędzie */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.devices-list {
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 0 0 calc(25% - 20px); /* Określa szerokość kolumny; zmniejsz wartość, jeśli chcesz mieć więcej miejsca między kolumnami */
+    max-width: calc(25% - 20px); /* Określa maksymalną szerokość kolumny */
+}
+
+#ledStatus1 {
+    color: rgb(255, 0, 0);
+}
