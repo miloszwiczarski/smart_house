@@ -65,7 +65,8 @@ def initialize_test_devices_and_admin():
         {'name': 'dioda_1', 'is_on': False},
         {'name': 'dioda_2', 'is_on': False},
         {'name': 'dioda_3', 'is_on': False},
-        {'name': 'zamek_1', 'is_on': False}
+        {'name': 'zamek_1', 'is_on': False},
+        {'name': 'lampa_1', 'is_on': False}
     ]
 
     for device_data in devices:

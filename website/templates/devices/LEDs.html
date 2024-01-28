@@ -27,7 +27,7 @@
         <button onclick="goBack()"  class="back-button">Powrót</button>
     </div>
     <div class="dashboard-page">
-        <h1>Diody LED</h1>
+        <h1>Diody LED + Lampa</h1>
         <div class="container search-results">
             <div class="container-fluid search-container">
                 <div class="row">
@@ -43,6 +43,11 @@
                         <h1 class="devices-h1">Dioda nr 3</h1>
                         <button onclick="toggleLEDState('dioda_3')"><div id="ledStatus3">Stan</div></button>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 devices-list">
+                        <h1 class="devices-h1">Lampa</h1>
+                        <button onclick="toggleLEDState('lampa_1')"><div id="lampStatus1">Stan</div></button>
                     </div>
                 </div>
             </div>
@@ -79,6 +84,7 @@ function checkLEDStatus() {
         updateLEDStatus('ledStatus1', data.led_status_1);
         updateLEDStatus('ledStatus2', data.led_status_2);
         updateLEDStatus('ledStatus3', data.led_status_3);
+        updateLEDStatus('lampStatus1', data.lamp_status_1);
     })
     .catch(error => console.error('Błąd podczas pobierania statusu diod LED:', error));
 }

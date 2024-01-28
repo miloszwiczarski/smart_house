@@ -146,11 +146,13 @@ def check_led_status():
     led_status_1 = get_device_state("dioda_1")
     led_status_2 = get_device_state("dioda_2")
     led_status_3 = get_device_state("dioda_3")
+    lamp_status_1 = get_device_state("lampa_1")
     
     print(led_status_1)
     print(led_status_2)
     print(led_status_3)
-    return jsonify({'led_status_1': led_status_1, 'led_status_2': led_status_2, 'led_status_3': led_status_3})
+    print(lamp_status_1)
+    return jsonify({'led_status_1': led_status_1, 'led_status_2': led_status_2, 'led_status_3': led_status_3, 'lamp_status_1': lamp_status_1})
 
 
 
